@@ -1,3 +1,5 @@
+import 'package:clubhouse_clone/views/components/reminder_rooms.dart';
+
 import 'components/invites_pop_up.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +17,8 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             invitesPopUp(),
+            SizedBox(height: 20),
+            reminderRooms(),
           ],
         ),
       ),
