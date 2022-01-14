@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'notification_btn.dart';
+
 AppBar customAppBar(BuildContext context, String title) {
   return AppBar(
     backgroundColor: Color(0xfff1eee5),
@@ -37,16 +39,7 @@ AppBar customAppBar(BuildContext context, String title) {
         },
       ),
       SizedBox(width: 15),
-      IconButton(
-        icon: Icon(
-          Icons.notifications_outlined,
-          color: Colors.black,
-          size: 32,
-        ),
-        onPressed: () {
-          print('go to notifications');
-        },
-      ),
+      notificationBtn(),
       SizedBox(width: 15),
       InkWell(
         child: CircleAvatar(
