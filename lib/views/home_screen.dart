@@ -14,11 +14,11 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xfff1eee5),
       appBar: customAppBar(context, 'fdf'),
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(12),
+      body: Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(12),
+            child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -29,20 +29,17 @@ class HomeScreen extends StatelessWidget {
                   room(),
                   SizedBox(height: 20),
                   room(),
+                  SizedBox(height: 20),
+                  room(),
                 ],
               ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                height: 1200,
-                child: Center(
-                  child: bottomBar(),
-                ),
-              ),
-            ),
-          ],
-        ),
+          ),
+          Positioned(
+            bottom: 15,
+            child: bottomBar(),
+          ),
+        ],
       ),
     );
   }
