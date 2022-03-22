@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 
 import 'components/custom_app_bar.dart';
 import 'components/room.dart';
-import 'components/start_room_btn.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

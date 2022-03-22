@@ -1,3 +1,4 @@
+import 'package:clubhouse_clone/views/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'notification_btn.dart';
@@ -50,6 +51,12 @@ AppBar customAppBar(BuildContext context, String title) {
         ),
         onTap: () {
           print('go to profile');
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ProfileScreen(),
+            ),
+          );
         },
       ),
       SizedBox(width: 20),
