@@ -45,7 +45,7 @@ AppBar customAppBar(BuildContext context, String title) {
       InkWell(
         child: CircleAvatar(
           backgroundImage: AssetImage(
-            'assets/images/profile24.jfif',
+            'assets/images/user.jpg',
           ),
           radius: 20,
         ),

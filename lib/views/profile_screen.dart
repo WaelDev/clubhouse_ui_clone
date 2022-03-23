@@ -50,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
           children: [
             CircleAvatar(
               backgroundImage: AssetImage(
-                'assets/images/profile24.jfif',
+                'assets/images/user.jpg',
               ),
               radius: 35,
             ),
@@ -83,6 +83,55 @@ class ProfileScreen extends StatelessWidget {
               onPressed: () => print('add a bio'),
               child: Text('Add a bio'),
             ),
+            SizedBox(height: 20),
+            Row(
+              children: [
+                InkWell(
+                  onTap: () => print('go to twitter account'),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/twitter3.png',
+                        scale: 3.5,
+                      ),
+                      Text('philippehong'),
+                    ],
+                  ),
+                ),
+                SizedBox(width: 30),
+                InkWell(
+                  onTap: () => print('go to twitter account'),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/instagram.png',
+                        scale: 4,
+                      ),
+                      Text('   Add Instagram'),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 35),
+            Row(
+              children: [
+                CircleAvatar(
+                  backgroundImage: AssetImage(
+                    'assets/images/hack.jfif',
+                  ),
+                  radius: 20,
+                ),
+                SizedBox(width: 10),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Joined 3 Feb 2021'),
+                    Text('Nominated by David Wang'),
+                  ],
+                ),
+              ],
+            )
           ],
         ),
       ),
