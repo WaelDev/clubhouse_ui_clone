@@ -41,13 +41,13 @@ AppBar customAppBar(BuildContext context, String title) {
       ),
       SizedBox(width: 15),
       notificationBtn(),
-      SizedBox(width: 15),
+      SizedBox(width: 20),
       InkWell(
         child: CircleAvatar(
           backgroundImage: AssetImage(
             'assets/images/user.jpg',
           ),
-          radius: 20,
+          radius: 16,
         ),
         onTap: () {
           print('go to profile');

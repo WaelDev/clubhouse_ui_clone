@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'my_custom_clipper.dart';
-
-Widget invitesPopUp() {
+Widget invitesPopUp(BuildContext context) {
   return Stack(
+    clipBehavior: Clip.none,
     children: [
+      Positioned(
+        top: -20,
+        left: 160,
+        child: Image.asset(
+          'assets/images/triangle.png',
+          scale: 7,
+          color: Colors.white,
+        ),
+      ),
       Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -26,18 +34,6 @@ Widget invitesPopUp() {
             Text('Who else would be a great addition'),
             Text('to your Clubhouse community?'),
           ],
-        ),
-      ),
-      Positioned(
-        bottom: 0,
-        left: 150,
-        child: ClipPath(
-          clipper: MyCustomClipper(),
-          child: Container(
-            width: 50,
-            height: 50,
-            color: Colors.red,
-          ),
         ),
       ),
     ],

@@ -16,12 +16,14 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
             child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  invitesPopUp(),
+                  SizedBox(height: 20),
+                  invitesPopUp(context),
                   SizedBox(height: 20),
                   reminderRooms(),
                   SizedBox(height: 20),
@@ -35,7 +37,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 15,
+            bottom: 20,
             child: bottomBar(),
           ),
         ],
