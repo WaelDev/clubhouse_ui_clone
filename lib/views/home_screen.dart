@@ -38,7 +38,22 @@ class HomeScreen extends StatelessWidget {
           ),
           Positioned(
             bottom: 20,
-            child: bottomBar(),
+            child: bottomBar( context),
+          ),
+          Positioned(
+            bottom: 20,
+            right: 20,
+            child:
+            Container(
+              height: 45,
+              child: InkWell(
+                onTap: () => print('go to menu'),
+                child: Icon(
+                  Icons.apps,
+                  size: 30,
+                ),
+              ),
+            )
           ),
         ],
       ),

@@ -4,7 +4,7 @@ Widget startRoomBtn() {
   return InkWell(
     onTap: () => print('start a Room'),
     child: Container(
-      width: 180,
+      width: 165,
       height: 45,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(21),
@@ -21,7 +21,7 @@ Widget startRoomBtn() {
           Text(
             'Start a room',
             style: TextStyle(
-              fontSize: 21,
+              fontSize: 20,
               fontWeight: FontWeight.w600,
               color: Colors.white,
             ),
