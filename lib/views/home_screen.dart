@@ -27,34 +27,32 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: 20),
                   reminderRooms(),
                   SizedBox(height: 20),
-                  room(),
+                  room(context),
                   SizedBox(height: 20),
-                  room(),
+                  room(context),
                   SizedBox(height: 20),
-                  room(),
+                  room(context),
                 ],
               ),
             ),
           ),
           Positioned(
             bottom: 20,
-            child: bottomBar( context),
+            child: bottomBar(context),
           ),
           Positioned(
-            bottom: 20,
-            right: 20,
-            child:
-            Container(
-              height: 45,
-              child: InkWell(
-                onTap: () => print('go to menu'),
-                child: Icon(
-                  Icons.apps,
-                  size: 30,
+              bottom: 20,
+              right: 20,
+              child: Container(
+                height: 45,
+                child: InkWell(
+                  onTap: () => print('go to menu'),
+                  child: Icon(
+                    Icons.apps,
+                    size: 30,
+                  ),
                 ),
-              ),
-            )
-          ),
+              )),
         ],
       ),
     );
